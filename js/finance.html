@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Finance Calculator</title>
+    </head>
+    <body>
+        <h1>Financial Calculator</h1>
+        <div id="mainApp">
+            <div id="selector">
+                <a href="#" id="investLink">Investment</a> <a href="#" id="bondLink">Bond</a>
+            </div>
+            <div id="investForm">
+                <label>How much are you depositing?</label>
+                <br>
+                <input id="investCap">
+                <br>
+                <label>What is the interest rate (%)?</label>
+                <br>
+                <input id="investInterest">
+                <br>
+                <label>How many years will you invest your money?</label>
+                <br>
+                <input id="investTime">
+                <br>
+                <button id="investButton">Calculate</button>
+                <br>
+                <span id="investResult"></span>
+            </div>
+            <div id ="bondForm" class="inactive">
+                <label>What is the current value of the property?</label>
+                <br>
+                <input id="bondProp">
+                <br>
+                <label>What is the interest rate (%)?</label>
+                <br>
+                <input id="bondInterest">
+                <br>
+                <label>How many months will you have the bond?</label>
+                <br>
+                <input id="bondTime">
+                <br>
+                <button id="bondButton">Calculate</button>
+                <br>
+                <span id="bondResult"></span>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
