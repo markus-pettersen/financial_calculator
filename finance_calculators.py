@@ -72,9 +72,9 @@ while True:
     user_choice = input('>>> ').strip()
     if user_choice == ('1'):
         investment_calculator()
-    if user_choice == ('2'):
+    elif user_choice == ('2'):
         bond_calculator()
-    if user_choice == ('0'):
+    elif user_choice == ('0'):
         print('Goodbye')
         exit()
     else:
